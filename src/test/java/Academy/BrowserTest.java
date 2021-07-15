@@ -23,6 +23,7 @@ public class BrowserTest {
 		String text =driver.findElement(By.cssSelector("h1")).getText();
 		System.out.println(text);
 		Assert.assertTrue(text.equalsIgnoreCase("SurendharThallapelly Azure Devops Learning"));
+		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 		driver.close();
 	
 		
