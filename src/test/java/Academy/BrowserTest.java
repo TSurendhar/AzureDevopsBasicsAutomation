@@ -15,7 +15,7 @@ public class BrowserTest {
 	@Test
 	public void getData() {
 		System.out.println("Hello Guys");
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		// System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeDriverService chromeDriverService = ChromeDriverService.createDefaultService();
 		WebDriver driver = new ChromeDriver(chromeDriverService);
 		driver.get("https://surendharthallapelly.azurewebsites.net/webapp/");
